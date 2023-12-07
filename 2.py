@@ -1,13 +1,16 @@
 def main():
-    sas = int(input())
-    sys = int(input())
-    try:
-        kek = sas // sys
-    except ZeroDivisionError:
-        print("!ERROR! \nДелить на 0 нельзя!")
-    else:
-        print(kek)
+    while True:
+        try:
+            sas = int(input())
+            sys = int(input())
+            kek = sas + sys
+        except ValueError:
+            print("!ERROR! \nВведите целочисленные числа")
+        else:
+            print(kek)
+            break
 
 
 if __name__ == "__main__":
     main()
+
